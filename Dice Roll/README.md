@@ -1,0 +1,1 @@
+In this project I've  created a dice rolling mini game in the console.
