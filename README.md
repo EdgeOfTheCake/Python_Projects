@@ -1,2 +1,2 @@
 # Python_Projects
-In this repository there are my hobby Python projects
+In this repository you can find my hobby Python projects
