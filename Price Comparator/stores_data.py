@@ -17,10 +17,10 @@ stores = {
         'separator': "+",
         "after_search_params": "&ref=nb_sb_noss"
     },
-    'OnBuy': {
-        'base_url': 'https://www.onbuy.com/gb/',
-        "search_params": "search/?query=",
+    'eBay': {
+        'base_url': 'https://www.ebay.com/',
+        "search_params": "sch/i.html?_from=R40&_nkw=",
         'separator': "+",
-        "after_search_params": ""
+        "after_search_params": "&_sacat=0&rt=nc&LH_All=1"
     }
 }
