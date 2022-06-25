@@ -1,0 +1,17 @@
+{
+    "url": "https://www.mnb.hu/arfolyamok",
+    "currencies": [
+        {
+            "name": "dasdsad",
+            "rate": 0
+        },
+        {
+            "name": "USD",
+            "rate": 0
+        },
+        {
+            "name": "GBP",
+            "rate": 0
+        }
+    ]
+}

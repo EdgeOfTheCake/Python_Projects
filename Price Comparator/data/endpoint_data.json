@@ -1,0 +1,138 @@
+{
+    "endpoints": [
+        {
+            "name": "Alza",
+            "base_url": "https://www.alza.hu/",
+            "before_item_search": "search.htm?exps=",
+            "after_item_search": "",
+            "separator": "+",
+            "result_url": "",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+            },
+            "scrape_info":{
+                "result_list_tag": "div",
+                "result_list_class": "browsingitemcontainer",
+                "need_inner_find": false,
+                "change_price_from_huf": true,
+                "item_name_tag": "a",
+                "item_name_class": "name browsinglink",
+                "item_price_tag": "span",
+                "item_price_class": "c2",
+                "item_price_inner_tag": "",
+                "replace" : {
+                    "Ft": ""
+                }
+            }
+        },
+        {
+            "name": "Emag",
+            "base_url": "https://www.emag.hu/",
+            "before_item_search": "search/",
+            "after_item_search": "?ref=effective_search",
+            "separator": "%20",
+            "result_url": "",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+            },
+            "scrape_info":{
+                "result_list_tag": "div",
+                "result_list_class": "js-products-container",
+                "need_inner_find": false,
+                "change_price_from_huf": true,
+                "item_name_tag": "a",
+                "item_name_class": "card-v2-title",
+                "item_price_tag": "p",
+                "item_price_class": "product-new-price",
+                "item_price_inner_tag": "",
+                "replace" : {
+                    "Ft": "",
+                    ".": ""
+                }
+            }
+        },
+        {
+            "name": "Amazon",
+            "base_url": "https://www.amazon.com/",
+            "before_item_search": "s?k=",
+            "after_item_search": "&ref=nb_sb_noss",
+            "separator": "+",
+            "result_url": "",
+            "headers": {
+                "Host": "www.amazon.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+            },
+            "scrape_info":{
+                "result_list_tag": "div",
+                "result_list_class": "s-main-slot",
+                "need_inner_find": true,
+                "change_price_from_huf": false,
+                "inner_result_list_tag": "div",
+                "inner_result_list_class": "s-asin",
+                "item_name_tag": "span",
+                "item_name_class": "a-size-medium a-color-base a-text-normal",
+                "item_price_tag": "span",
+                "item_price_class": "a-offscreen",
+                "item_price_inner_tag": "",
+                "replace" : {
+                    "$": "",
+                    ",": ""
+                }
+            }
+        },
+        {
+            "name": "Ebay",
+            "base_url": "https://www.ebay.com/",
+            "before_item_search": "sch/i.html?_from=R40&_nkw=",
+            "after_item_search": "&_sacat=0&rt=nc&LH_All=1",
+            "separator": "+",
+            "result_url": "",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+            },
+            "scrape_info":{
+                "result_list_tag": "ul",
+                "result_list_class": "srp-results srp-list clearfix",
+                "need_inner_find": true,
+                "change_price_from_huf": false,
+                "inner_result_list_tag": "li",
+                "inner_result_list_class": "s-item",
+                "item_name_tag": "h3",
+                "item_name_class": "s-item__title",
+                "item_price_tag": "span",
+                "item_price_class": "s-item__price",
+                "item_price_inner_tag": "",
+                "replace" : {
+                    "$": "",
+                    ",": ""
+                }
+            }
+        },
+        {
+            "name": "Newegg",
+            "base_url": "https://www.newegg.com/",
+            "before_item_search": "p/pl?d=",
+            "after_item_search": "",
+            "separator": "+",
+            "result_url": "",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+            },
+            "scrape_info":{
+                "result_list_tag": "div",
+                "result_list_class": "item-cells-wrap",
+                "need_inner_find": false,
+                "change_price_from_huf": false,
+                "item_name_tag": "a",
+                "item_name_class": "item-title",
+                "item_price_tag": "li",
+                "item_price_class": "price-current",
+                "item_price_inner_tag": "strong",
+                "replace" : {
+                    "$": "",
+                    ",": ""
+                }
+            }
+        }
+    ]
+}
